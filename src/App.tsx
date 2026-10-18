@@ -1,12 +1,19 @@
-import ImageBlog1 from './assets/blogs/blog-1.jpg';
+import ReactJsx from './pages/fundamental/react-jsx';
+import ReactProps from './pages/fundamental/react-props';
 
 function App() {
 
   return (
     <>
-      <h1 className='heading'>Blog</h1>
+      <ReactJsx />
 
-      <img src={ImageBlog1} width={200}/>
+      <br />
+      <ReactProps />
+
+      <br />
+      <br />
+      <br />
+      <br />      
     </>
   )
 }
