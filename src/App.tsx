@@ -1,3 +1,4 @@
+import ConditionalRendering from './pages/fundamental/conditional-rendering';
 import ReactJsx from './pages/fundamental/react-jsx';
 import ReactProps from './pages/fundamental/react-props';
 import ReactState from './pages/fundamental/react-state';
@@ -17,6 +18,9 @@ function App() {
 
       <br />
       <ComposeComponent />
+
+      <br />
+      <ConditionalRendering />
 
       <br />
       <br />
