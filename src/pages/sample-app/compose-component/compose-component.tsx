@@ -1,13 +1,13 @@
-import React from 'react'
+import Items from './components/items'
+import myCss from './compose-component.module.css'
 
 function ComposeComponent() {
   return (
-    <div>
-      <h1 className='product'>ComposeComponent</h1>
-    </div>
+    <section className={myCss.items} aria-label='Items'>
+      <Items />
+      <Items />
+    </section>
   )
 }
 
 export default ComposeComponent
-
-// justify=-content -> inline cs

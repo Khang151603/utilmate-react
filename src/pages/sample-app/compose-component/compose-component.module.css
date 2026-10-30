@@ -1,0 +1,38 @@
+.items {
+  display: grid;
+  gap: 8px;
+  width: min(100%, 264px);
+  margin-left: auto;
+}
+
+.item {
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.title {
+  margin: 0;
+  padding: 6px 10px;
+  background-color: #f7c83e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.actions {
+  padding: 10px;
+}
+
+.button {
+  padding: 5px 9px;
+  background-color: #fff;
+  color: #687780;
+  font-size: 12px;
+}
+
+.button:hover {
+  background-color: #7d898f;
+  border-color: #7d898f;
+  color: #fff;
+}
