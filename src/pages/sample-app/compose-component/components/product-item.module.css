@@ -1,0 +1,31 @@
+.productItemArticle {
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.productItemTitle {
+  margin: 0;
+  padding: 6px 10px;
+  background-color: #f7c83e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.productItemActions {
+  padding: 10px;
+}
+
+.productItemButton {
+  padding: 5px 9px;
+  background-color: #fff;
+  color: #687780;
+  font-size: 12px;
+}
+
+.productItemButton:hover {
+  background-color: #7d898f;
+  border-color: #7d898f;
+  color: #fff;
+}
