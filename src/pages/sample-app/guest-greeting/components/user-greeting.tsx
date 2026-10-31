@@ -1,3 +1,5 @@
+import Button from "../../../../components/ui/button"
+
 interface UserGreetingProps {
   text: string
   name: string
@@ -10,9 +12,9 @@ function UserGreeting({ text, name, onLogout }: UserGreetingProps) {
       <h1>
         {text} {name}
       </h1>
-      <button type='button' onClick={onLogout}>
+      <Button type='button' onClick={onLogout}>
         Logout
-      </button>
+      </Button>
     </div>
   )
 }
