@@ -11,13 +11,14 @@ function App() {
       <ReactJsx />
 
       <br />
+      <ComposeComponent />
+
+
+      <br />
       <ReactProps />
 
       <br />
       <ReactState />
-
-      <br />
-      <ComposeComponent />
 
       <br />
       <ConditionalRendering />
