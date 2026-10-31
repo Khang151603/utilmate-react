@@ -26,3 +26,23 @@
 # Rule
 - All name file, name folder is kebab-case
 - Name function component react: Pascal Case
+
+
+# Fix conflict
+
+## Fix conflict when merge into develop branch
+- featureA
+
+```bash
+
+# step to step fix
+$ git checkout develop
+$ git pull
+$ git checkout -b featureA-dev-fc
+$ git merge --no-ff origin featureA
+$ git add .
+$ git commit -m 'xxx'
+$ git push
+
+# create MR featureA-dev-fc into develop branch
+```
