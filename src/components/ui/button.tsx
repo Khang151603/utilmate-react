@@ -1,11 +1,11 @@
 
 interface ButtonProps {
   type?: "submit" | "reset" | "button" | undefined,
-  text: string,
-  children: React.ReactNode
+  children: React.ReactNode,
+  onClick?: () => void
 }
 
-function Button({ text, children, ...restProps }: ButtonProps) {
+function Button({ children, ...restProps }: ButtonProps) {
   console.log('restProps button: ', restProps)
   return (
     <button 
