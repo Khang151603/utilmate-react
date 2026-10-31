@@ -1,8 +1,7 @@
-.items {
+.products {
   display: grid;
   gap: 8px;
   width: min(100%, 264px);
-  margin-left: auto;
 }
 
 .item {
