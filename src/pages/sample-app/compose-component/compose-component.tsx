@@ -1,11 +1,11 @@
-import Items from './components/items'
+import ProductItem from './components/product-item'
 import myCss from './compose-component.module.css'
 
 function ComposeComponent() {
   return (
-    <section className={myCss.items} aria-label='Items'>
-      <Items />
-      <Items />
+    <section className={myCss.products} aria-label='Items'>
+      <ProductItem />
+      <ProductItem />
     </section>
   )
 }
