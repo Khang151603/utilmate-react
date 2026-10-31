@@ -1,0 +1,1 @@
+export { default as GuestGreeting } from './guest-greeting'
