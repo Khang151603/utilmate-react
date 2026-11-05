@@ -3,6 +3,7 @@ import ReactJsx from './pages/fundamental/react-jsx';
 import ReactProps from './pages/fundamental/react-props';
 import ReactState from './pages/fundamental/react-state';
 import { ComposeComponent } from './pages/sample-app/compose-component';
+import GenerateBox from './pages/sample-app/generate-box/generate-box';
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
       <br />
       <br />
       <br />      
+
+      <GenerateBox />
     </>
   )
 }
