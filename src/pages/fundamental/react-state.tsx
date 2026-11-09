@@ -67,7 +67,6 @@ function ReactState() {
     setInputLastName(event.target.value)
   }
 
-  console.log('ReactState: ', form)
   return (
     <div>
       <h1>ReactState</h1> 

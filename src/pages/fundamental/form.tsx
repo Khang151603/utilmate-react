@@ -17,7 +17,7 @@ import React from "react";
 
 
 function Form() {
-  const firstNameRef = React.useRef(null);
+  const firstNameRef = React.useRef<any>(null);
   const [lastName, setLasName] = React.useState('');
 
   function handleSubmit(event: FormEvent) {
