@@ -7,6 +7,7 @@ import ReactState from './pages/fundamental/react-state';
 import UserHookForm from './pages/fundamental/user-hook-form';
 import { ComposeComponent } from './pages/sample-app/compose-component';
 import { GuestGreeting } from './pages/sample-app/guest-greeting';
+import LiftingStateUp from './pages/sample-app/lifting-state-up';
 
 function App() {
 
@@ -39,9 +40,12 @@ function App() {
       <UserHookForm />
 
       <br />
+      <LiftingStateUp />
+
       <br />
       <br />
-      <br />      
+      <br />
+      <br />
     </>
   )
 }
