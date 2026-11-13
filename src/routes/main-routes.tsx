@@ -6,6 +6,7 @@ import ReactProps from "../pages/fundamental/react-props";
 import ReactState from "../pages/fundamental/react-state";
 import User from "../pages/fundamental/user";
 import UserDetail from "../pages/fundamental/user-detail";
+import { ColorBox } from "../pages/sample-app/color-box";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: 'react-state',
         element: <ReactState />
+      },
+      {
+        path: 'color-box',
+        element: <ColorBox />
       },
       {
         path: 'users',

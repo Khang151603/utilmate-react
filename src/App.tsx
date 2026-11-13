@@ -16,6 +16,7 @@ function App() {
           <Link to="react-props">React Props</Link>
           <Link to="react-state" replace>React State</Link>
           <Link to="users">Demo useParams</Link>
+          <Link to="color-box">Color Box</Link>
         </div>
       </nav>
 
