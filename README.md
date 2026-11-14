@@ -46,3 +46,12 @@ $ git push
 
 # create MR featureA-dev-fc into develop branch
 ```
+
+
+## BE API
+- resource: product, order, user ...
+- Create -> POST: /api/user -> create a new user
+- Read -> GET: /api/user -> show list users
+- Detail -> GET: /api/user/:id -> FE call /api/user/1 -> get detail user
+- Update -> PUT: /api/user/:id -> FE call /api/user/1 -> update user
+- Delete -> DELETE: /api/user/:id -> FE call /api/user/1 -> delete user 1
