@@ -6,6 +6,7 @@ import ReactProps from "../pages/fundamental/react-props";
 import ReactState from "../pages/fundamental/react-state";
 import User from "../pages/fundamental/user";
 import UserDetail from "../pages/fundamental/user-detail";
+import QuestionBoard from "../pages/sample-app/question-board/question-board";
 
 export const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
         element: <UserDetail />
       },
     ]
+  },
+  {
+    path: 'question-board',
+    element: <QuestionBoard />
   },
   {
     path: 'login',
