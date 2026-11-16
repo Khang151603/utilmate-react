@@ -1,12 +1,19 @@
-import { Link, Outlet } from 'react-router';
+import { Link, Outlet, useNavigate } from 'react-router';
 import ConditionalRendering from './pages/fundamental/conditional-rendering';
 import Form from './pages/fundamental/form';
 import DropDrilling from './pages/fundamental/prop-drilling';
 import UserHookForm from './pages/fundamental/user-hook-form';
 import { ComposeComponent } from './pages/sample-app/compose-component';
 import { GuestGreeting } from './pages/sample-app/guest-greeting';
+import Button from './components/ui/button';
 
 function App() {
+  const navigate = useNavigate();
+  
+  function handleLogout() {
+    window.localStorage.clear();
+    navigate('/login')
+  }
 
   return (
     <>
@@ -17,6 +24,9 @@ function App() {
           <Link to="react-state" replace>React State</Link>
           <Link to="users">Demo useParams</Link>
           <Link to="color-box">Color Box</Link>
+        </div>
+        <div>
+          <Button className='cursor-pointer' onClick={handleLogout}>Logout</Button>
         </div>
       </nav>
 

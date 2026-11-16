@@ -47,7 +47,6 @@ $ git push
 # create MR featureA-dev-fc into develop branch
 ```
 
-
 ## BE API
 - resource: product, order, user ...
 - Create -> POST: /api/user -> create a new user
@@ -55,3 +54,14 @@ $ git push
 - Detail -> GET: /api/user/:id -> FE call /api/user/1 -> get detail user
 - Update -> PUT: /api/user/:id -> FE call /api/user/1 -> update user
 - Delete -> DELETE: /api/user/:id -> FE call /api/user/1 -> delete user 1
+
+
+## Authenticate Route & Authorize
+- Authenticate - xác thực - bạn đã register hệ thống or not
+- Authorize - phân quyền - can edit, read, delete ...
+
+## Flow authenticate
+### 1. BE return access_token
+- FE request login -> call /api/login -> BE return access token -> FE store access token in localStorage/sessionStorage/cookie -> check localStorage/sessionStorage/cookie yes -> redirect to page private
+
+- FE request login -> call /api/login -> BE return user -> FE store user in localStorage/sessionStorage/cookie -> check localStorage/sessionStorage/cookie yes -> redirect to page private

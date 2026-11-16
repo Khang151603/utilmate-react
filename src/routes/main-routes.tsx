@@ -7,12 +7,16 @@ import ReactState from "../pages/fundamental/react-state";
 import User from "../pages/fundamental/user";
 import UserDetail from "../pages/fundamental/user-detail";
 import { ColorBox } from "../pages/sample-app/color-box";
+import { Login } from "../pages/login";
+import AuthRoute from "./auth-route";
+import GuestRoute from "./guest-route";
+import { ContactUs } from "../pages/contact-us";
 
 export const router = createBrowserRouter([
   {
     path: '/',
     // Component: App
-    element: <App />,
+    element: <AuthRoute><App /></AuthRoute>,
     children: [
       {
         index: true,
@@ -46,6 +50,10 @@ export const router = createBrowserRouter([
   },
   {
     path: 'login',
-    element: <div>login</div>
+    element: <GuestRoute><Login /></GuestRoute>
+  },
+  {
+    path: 'contact-us',
+    element: <ContactUs />
   }
 ])

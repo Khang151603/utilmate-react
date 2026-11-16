@@ -22,6 +22,7 @@ How many ways to component  re-render?
 
 
 function ReactState() {
+
   const [inputFirstName,  setInputFirstName] = React.useState('');
   const [inputLastName, setInputLastName] = React.useState('');
   
@@ -66,7 +67,7 @@ function ReactState() {
   function onChangeLastName(event: React.ChangeEvent<HTMLInputElement>) {
     setInputLastName(event.target.value)
   }
-
+  
   return (
     <div>
       <h1>ReactState</h1> 
