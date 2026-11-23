@@ -11,12 +11,13 @@ import { Login } from "../pages/login";
 import AuthRoute from "./auth-route";
 import GuestRoute from "./guest-route";
 import { ContactUs } from "../pages/contact-us";
+import UseEffect from "../pages/fundamental/use-effect";
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    // Component: App
-    element: <AuthRoute><App /></AuthRoute>,
+    Component: App,
+    // element: <AuthRoute><App /></AuthRoute>,
     children: [
       {
         index: true,
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: 'users/:userId',
         element: <UserDetail />
+      },
+      {
+        path: 'use-effect',
+        element: <UseEffect />
       },
     ]
   },

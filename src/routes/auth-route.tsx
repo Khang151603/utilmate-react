@@ -25,6 +25,7 @@ function AuthRoute({ children }: React.PropsWithChildren) {
         }
 
         if (!json.isSuccess) {
+          window.localStorage.clear();
           setUsers('')
         }
 

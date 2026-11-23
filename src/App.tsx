@@ -24,6 +24,7 @@ function App() {
           <Link to="react-state" replace>React State</Link>
           <Link to="users">Demo useParams</Link>
           <Link to="color-box">Color Box</Link>
+          <Link to="use-effect">UseEffect</Link>
         </div>
         <div>
           <Button className='cursor-pointer' onClick={handleLogout}>Logout</Button>

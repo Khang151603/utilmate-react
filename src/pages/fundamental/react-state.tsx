@@ -20,12 +20,11 @@ How many ways to component  re-render?
 - Parent component re-render
 */
 
-
 function ReactState() {
-
   const [inputFirstName,  setInputFirstName] = React.useState('');
   const [inputLastName, setInputLastName] = React.useState('');
-  
+  const [count, setCount] = React.useState(1);
+
   const [form, setForm] = React.useState({
     firstName: '',
     lastName: '',
@@ -67,6 +66,28 @@ function ReactState() {
   function onChangeLastName(event: React.ChangeEvent<HTMLInputElement>) {
     setInputLastName(event.target.value)
   }
+
+  function updateCount() {
+    // setCount(count + 1); // 2 setCount(2)
+    // setCount(count + 1); // 2
+    // setCount(count + 1); // 2
+    // setCount(count + 1); // 2
+    // setInputFirstName('tiny')
+    // setInputLastName('adsa')
+
+    // callback function (syntax: arrow function)
+    // react: updater function
+    setCount((prevState) => {
+      // code logic inside
+      return prevState + 1;
+    })
+    setCount((prevState) => {
+      return prevState + 1;
+    })
+    setCount((prevState) => {
+      return prevState + 1;
+    })
+  }
   
   return (
     <div>
@@ -77,7 +98,13 @@ function ReactState() {
       Age: {form.message.text} <br />
       Total: {form.message.total} <br />
 
-      <button type="button" onClick={handleUpdateName}>Update Name</button>
+      <button type="button" className="border"  onClick={handleUpdateName}>Update Name</button>
+
+      <br />
+
+      <h3 className='text-2xl'>Count</h3>
+      Count: {count} <button type="button" className="border" onClick={updateCount}>Update Count</button>
+
     </div>
   )
 }
