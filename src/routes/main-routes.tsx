@@ -12,6 +12,7 @@ import AuthRoute from "./auth-route";
 import GuestRoute from "./guest-route";
 import { ContactUs } from "../pages/contact-us";
 import UseEffect from "../pages/fundamental/use-effect";
+import TrafficLight from "../pages/sample-app/traffic-light";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: 'use-effect',
         element: <UseEffect />
+      },
+      {
+        path: 'traffic-light',
+        element: <TrafficLight />
       },
     ]
   },
