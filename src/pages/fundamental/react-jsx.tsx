@@ -6,6 +6,8 @@ function Product() {
 }
 
 function ReactJsx() {
+  // code logic authenticate\
+  console.log('ReactJSX')
 
   const expression1 = 1 + 1;
   const renderUser = (

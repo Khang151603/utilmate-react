@@ -11,7 +11,7 @@ interface ButtonProps {
 }
 
 function Button({ text, children, className, disabled, name, colors, ...restProps }: ButtonProps) {
-  console.log('restProps button: ', restProps)
+  // console.log('restProps button: ', restProps)
   return (
     <button 
     className={className}

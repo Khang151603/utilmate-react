@@ -43,7 +43,6 @@ function ConditionalRendering() {
       id: Math.floor(Math.random() * 1000),
     }
   })
-  console.log('results: ', results)
   
   const myStyles = {
     fontSize: 20
