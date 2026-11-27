@@ -25,6 +25,7 @@ function App() {
           <Link to="users">Demo useParams</Link>
           <Link to="color-box">Color Box</Link>
           <Link to="use-effect">UseEffect</Link>
+          <Link to="traffic-light">Traffic Light</Link>
         </div>
         <div>
           <Button className='cursor-pointer' onClick={handleLogout}>Logout</Button>
