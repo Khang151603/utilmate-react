@@ -7,6 +7,7 @@ import ReactState from "../pages/fundamental/react-state";
 import User from "../pages/fundamental/user";
 import UserDetail from "../pages/fundamental/user-detail";
 import { ColorBox } from "../pages/sample-app/color-box";
+import JobBoard from "../pages/sample-app/job-board";
 import { Login } from "../pages/login";
 import AuthRoute from "./auth-route";
 import GuestRoute from "./guest-route";
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: 'color-box',
         element: <ColorBox />
+      },
+      {
+        path: 'job-board',
+        element: <JobBoard />
       },
       {
         path: 'users',
