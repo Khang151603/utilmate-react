@@ -28,7 +28,6 @@ function Form() {
     })
   }
 
-  console.log('Form render')
   return (
     <div>
       <h1>Form</h1>
